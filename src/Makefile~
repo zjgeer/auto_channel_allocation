@@ -1,0 +1,7 @@
+#bulid a Makefile for auto_channel_alloction.c
+auto_channel_alloction: auto_channel_alloction.o
+	$(CC) $(LDFLAGS) auto_channel_alloction.o -o auto_channel_alloction
+auto_channel_alloction.o: auto_channel_alloction.c
+	$(CC) $(CFLAGS) -c auto_channel_alloction.c
+clean:
+	rm *.o auto_channel_alloction
